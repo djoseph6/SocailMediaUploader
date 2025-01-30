@@ -1,0 +1,106 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.automation.socailmediauploader</groupId>
+  <artifactId>socialmedia-uploader</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+<!--  Spring Boot Web for REST APIs  -->
+<!--  https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web  -->
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-web</artifactId>
+<version>3.4.1</version>
+</dependency>
+<!--  Spring Boot DevTools for Hot Reload  -->
+<!--  https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools  -->
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-devtools</artifactId>
+<version>3.4.1</version>
+</dependency>
+<!--  https://mvnrepository.com/artifact/org.springframework/spring-webmvc  -->
+<dependency>
+<groupId>org.springframework</groupId>
+<artifactId>spring-webmvc</artifactId>
+<version>6.2.1</version>
+</dependency>
+<!--  https://mvnrepository.com/artifact/org.springframework/spring-test  -->
+<dependency>
+<groupId>org.springframework</groupId>
+<artifactId>spring-test</artifactId>
+<version>6.2.1</version>
+<scope>test</scope>
+</dependency>
+<!--  https://mvnrepository.com/artifact/org.springframework/spring-web  -->
+<dependency>
+<groupId>org.springframework</groupId>
+<artifactId>spring-web</artifactId>
+<version>6.2.1</version>
+</dependency>
+<!--  https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test  -->
+<!--  Spring Boot Starter Test for Testing  -->
+<!--  Selenium WebDriver for automation  -->
+<dependency>
+<groupId>org.seleniumhq.selenium</groupId>
+<artifactId>selenium-java</artifactId>
+<version>4.9.1</version>
+</dependency>
+<!--  WebDriver Manager to handle drivers  -->
+<dependency>
+<groupId>io.github.bonigarcia</groupId>
+<artifactId>webdrivermanager</artifactId>
+<version>5.6.3</version>
+</dependency>
+<!--  TestNG for structured test cases  -->
+<!--  https://mvnrepository.com/artifact/org.testng/testng  -->
+<dependency>
+<groupId>org.testng</groupId>
+<artifactId>testng</artifactId>
+<version>7.10.2</version>
+<scope>test</scope>
+</dependency>
+<!--  Cucumber for BDD testing  -->
+<dependency>
+<groupId>io.cucumber</groupId>
+<artifactId>cucumber-java</artifactId>
+<version>7.11.0</version>
+</dependency>
+<!--  RestAssured for API Testing  -->
+<dependency>
+<groupId>io.rest-assured</groupId>
+<artifactId>rest-assured</artifactId>
+<version>5.3.0</version>
+<scope>test</scope>
+</dependency>
+<!--  Jackson Databind for JSON handling  -->
+<!--  https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind  -->
+<dependency>
+<groupId>com.fasterxml.jackson.core</groupId>
+<artifactId>jackson-databind</artifactId>
+<version>2.18.2</version>
+</dependency>
+<!--  Google API Client (YouTube API)  -->
+<dependency>
+<groupId>com.google.api-client</groupId>
+<artifactId>google-api-client</artifactId>
+<version>1.35.2</version>
+</dependency>
+<dependency>
+<groupId>com.google.apis</groupId>
+<artifactId>google-api-services-youtube</artifactId>
+<version>v3-rev222-1.25.0</version>
+</dependency>
+<!--  Twitter API Client  -->
+<!--  Apache Commons IO for file handling  -->
+<dependency>
+<groupId>commons-io</groupId>
+<artifactId>commons-io</artifactId>
+<version>2.11.0</version>
+</dependency>
+<dependency>
+<groupId>io.github.bonigarcia</groupId>
+<artifactId>webdrivermanager</artifactId>
+<version>5.6.3</version>
+</dependency>
+</dependencies>
+</project>
