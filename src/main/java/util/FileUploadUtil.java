@@ -1,10 +1,13 @@
+package util;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import CustomExceptions;
+import util.EmptyStringException;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FileUploadUtil {
 	
 	private static File videoFile;
@@ -23,7 +26,7 @@ public class FileUploadUtil {
 	     * @throws EmptyStringException if the filepath is not found or empty
 	     */
 	
-	private static void uploadFile(String filePath) throws EmptyStringException{
+	public static void uploadFile(String filePath) throws EmptyStringException{
 		
 		if(filePath.isBlank() || filePath.isEmpty()) { //if the filepath is blank or empty
 			throw new EmptyStringException();			//throw an empty string exception
@@ -48,7 +51,7 @@ public class FileUploadUtil {
         return false;
     }
 	
-	 private String getFileExtension(File file) {					//gets file extension from file name
+	 private static String getFileExtension(File file) {					//gets file extension from file name
 	        String name = file.getName();
 	        return name.substring(name.lastIndexOf('.')).toLowerCase();
 	    }
@@ -59,6 +62,7 @@ public class FileUploadUtil {
 		 } else {
 			 logger.warn("Video File does not exist");
 		 }
+		return videoFile;
 		 
 	 }
 }
